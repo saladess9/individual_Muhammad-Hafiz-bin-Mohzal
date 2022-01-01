@@ -1,0 +1,117 @@
+    * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	}
+
+	@font-face {
+		font-family: 'memphisriver';
+		src: url(font/StretchPro.otf);
+		}
+
+	body {
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(image/background.jpg);
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	}
+
+	.menu-bar h1 {
+	font-family: 'memphisriver';
+	color: white;
+	font-size: 13px;
+	}
+
+	.menu-bar {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	height: 60px;
+	background: rgba(0,0,0,0.7);
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	}
+
+	.menu-bar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	}
+
+	.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+	position: relative;
+	}
+
+	.menu-bar ul li a::after {
+	content: '';
+	width: 0%;
+	height: 3px;
+	position: absolute;
+	bottom: -5%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	transition: width 0.3s;
+	}
+
+	.menu-bar ul li a:hover::after {
+    width: 50%;
+	}
+
+	.icons {
+	position: absolute;
+	right: 5%;
+	bottom: 8%;
+	}
+
+	.icons img {
+	width: 40px;
+	display: block;
+	margin: 25px 5px;
+  	}
+
+	h2 {
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	background: linear-gradient(90deg,#edf2fb,#abc4ff);
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 2cm;
+	}
+
+	.biodata-words {
+	color: #fff;
+	font-family: sans-serif;
+	text-align: center;
+	column-count: 2;
+	margin-top: 1cm;
+	column-fill: balance;
+	}
+	
+	.biodata-words h3 {
+	font-size: 25px;
+	font-weight: 400;
+	}
+	
+	.biodata-words p {
+	font-size: 20px;
+	font-weight: 400;
+	}
+
+	footer {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-style: normal;
+	font-size: 0.8pc;
+	color: white;
+	text-align: center;
+	margin-top: 0.8cm;
+	}
